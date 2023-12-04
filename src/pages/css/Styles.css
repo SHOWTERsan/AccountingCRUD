@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 18px;
+}
+
+.tableStyle {
+    border-collapse: collapse;
+    width: 90%; /* reduced width */
+    text-align: center;
+    margin: 0 auto; /* centering the table */
+    padding: 0 16px; /* adding some padding */
+}
+
+.tableHeaderStyle {
+    border-bottom: 2px solid #ddd;
+    padding: 16px; /* increased from 10px for better readability */
+    background-color: #f2f2f2;
+    font-size: 20px; /* increased font size */
+}
+.tableHeaderStyle:nth-child(1) { width: 20%; }
+.tableHeaderStyle:nth-child(2) { width: 30%; }
+.tableHeaderStyle:nth-child(3) { width: 12%; }
+.tableHeaderStyle:nth-child(4) { width: 12%; }
+.tableHeaderStyle:nth-child(5) { width: 25%; }
+.tableDataStyle:hover {
+    background-color: #f9f9f9; /* hover color */
+}
+.tableDataStyle, .inputStyle {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+    font-weight: normal;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.tableDataStyle {
+    padding: 16px;
+}
+
+.inputStyle {
+    border-color: #ddd;
+    border-radius: 5px;
+    width: 30%;
+    padding: 0 2px; /* adjust padding to avoid text displacement when border appears */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+.selectStyle {
+    font-size: 18px;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px; /* make the select inputs a bit larger */
+    border: 1px solid #ddd; /* subtle border for select inputs */
+}
+
+.table-container {
+    min-height: 900px;  /* set this to the minimum height you want */
+    position: relative;
+    margin-bottom: 50px; /* space for pagination */
+}
+
+.loader-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pagination-box {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.hidden {
+    display: none;
+}
+.page-item {
+    list-style-type: none;
+    display: inline;
+    margin: 5px 10px;
+}
+
+.page-link {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.page-item.active .page-link {
+    background-color: #5A6268;
+}
+
+.page-item.disabled .page-link {
+    background-color: #6C757D;
+    cursor: not-allowed;
+}
+
+.page-link:first-child {
+    margin-right: 10px;
+}
+
+.page-link:last-child {
+    margin-left: 10px;
+}
+
+.buttonStyle {
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: #007BFF;
+    border: 1px solid #007BFF;
+    margin: 5px 10px;
+    transition: all 0.2s;
+}
+
+.buttonStyle:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.addButtonStyle {
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: #28a745;
+    border: 1px solid #28a745;
+    margin: 5px 10px;
+    transition: all 0.2s;
+}
+
+.addButtonStyle:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+.saveButtonStyle {
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+    margin: 5px 10px;
+    transition: all 0.2s;
+}
+
+.saveButtonStyle:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+
+
+.inputStyle:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.tableDataStyleWithButton {
+    padding: 16px;
+    position: relative;
+}
+
+.deleteButton {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+}
